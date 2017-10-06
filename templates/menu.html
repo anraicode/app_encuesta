@@ -1,0 +1,27 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+          <a class="navbar-brand" href="#">
+            <b>Sistema Encuesta</b>
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+            {% if user.is_authenticated %}
+                <li><a><b>Alonso Nuñez</b></a></li>
+                <li><a href="/logout"><b>Cerrar Sesión</b></a></li>
+            {% else %}
+                <li {% if l %}class="active" {% endif %}><a {% if l %}class="active" {% endif %} href="/login" class="menu-select"><b>Inciar Sesión</b></a></li>
+                <li {% if r %}class="active" {% endif %}><a {% if r %}class="active" {% endif %} href="/registrar"><b>Registrarse</b></a></li>
+            {% endif %}
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>

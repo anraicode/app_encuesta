@@ -1,0 +1,26 @@
+.dropped{
+    width: 100%;
+    min-height: 250px;
+    background: beige;
+}
+
+.drop{}
+.drop li {
+  list-style: none;
+}
+
+.drop li a {
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+  width: 150px;
+  border: 3px dashed #0f0f0f;
+  background: #44B78B;
+  padding: 10px;
+  display: block;
+}
+
+#result{
+	background-color: #f8f8f8;
+	min-height: 200px;
+}

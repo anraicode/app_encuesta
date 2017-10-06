@@ -1,0 +1,11 @@
+{% extends 'base_form.html' %}
+{% load staticfiles %}
+{% block extra-js%}
+    <script src="{% static "aplication/../../static/js/login.js" %}" type="text/javascript"></script>
+{% endblock %}
+{% block extraoptions %}
+    Ingrese correctamente su <strong>correo electronico</strong> y presione enviar. <br>
+    <i class="fa fa-refresh" aria-hidden="true"></i> Si deseas retornar <a href="{% url 'cuenta:login' %}">da click
+    aqui</a>
+{% endblock %}
+{% block widthform %}400px{% endblock %}
